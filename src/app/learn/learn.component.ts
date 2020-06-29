@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { RequestService } from '../request.service';
 
 @Component({
   selector: 'app-learn',
@@ -7,9 +8,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LearnComponent implements OnInit {
 
-  constructor() { }
+  public users: any;
 
-  ngOnInit(): void {
-  }
+  constructor(public request: RequestService) { }
+
+  ngOnInit()    {
+      this.request.getUser().subscribe((response) => {
+        this.users = response;
+        console.log('users',this.users);
+      }, (error) => {
+        console.log(error);
+      }
+
+      );
+    }
 
 }
+

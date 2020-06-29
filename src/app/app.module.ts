@@ -7,6 +7,11 @@ import { HomeComponent } from './home/home.component';
 import { LearnComponent } from './learn/learn.component';
 import { DocumentationComponent } from './documentation/documentation.component';
 import { BlogComponent } from './blog/blog.component';
+import { RequestService } from './request.service';
+import { HttpClientModule } from '@angular/common/http';
+import {FormsModule} from '@angular/forms';
+import { HeaderComponent } from './header/header.component';
+
 
 @NgModule({
   declarations: [
@@ -14,13 +19,18 @@ import { BlogComponent } from './blog/blog.component';
     HomeComponent,
     LearnComponent,
     DocumentationComponent,
-    BlogComponent
+    BlogComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule
   ],
-  providers: [],
+  providers: [
+    RequestService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

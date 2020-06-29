@@ -1,1 +1,15 @@
-<p>learn works!</p>
+<div>
+  <div>
+    <div *ngFor="let user of users?.data">
+      <div class="card">
+        <div class="photo"> </div>
+        <div class="banner"></div>
+        <ul>
+        <li *ngIf="user.first_name"><b>Name: {{user?.first_name}}</b></li>
+        <li>{{user?.email}} </li>
+        <li><img [src]="user?.avatar"></li>
+      </ul>
+      </div>
+  </div>
+</div>
+</div>

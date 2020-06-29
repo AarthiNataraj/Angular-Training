@@ -1,3 +1,13 @@
+
+!--
+<!-- Users List:
+     <div *ngFor="let user of users.data">
+      id: {{user.id}}
+      email: {{user.email}}
+      first_name: {{user.first_name}}
+      last_name: {{user.last_name}} --> -->
+
+
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 <!-- * * * * * * * * * * * The content below * * * * * * * * * * * -->
 <!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
