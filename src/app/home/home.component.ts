@@ -12,6 +12,8 @@ constructor() {
   this.setTitle();
   this.changeTitle();
 }
+
+//settittle
 private setTitle() {
   this.title = 'Aarthi Webpage';
 }
