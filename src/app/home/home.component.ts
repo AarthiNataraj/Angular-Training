@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
   public title: string;
-  //public title = ' Aarthi Web app';
+
 constructor() {
   this.setTitle();
   this.changeTitle();
