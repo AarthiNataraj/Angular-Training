@@ -13,6 +13,9 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { HeaderComponent } from './header/header.component';
 import { ChildComponent } from './child/child.component';
 import { SignupComponent } from './signup/signup.component';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {MatButtonModule} from '@angular/material/button';
+//import {MatButtonModule} from '@angular/material';
 
 
 @NgModule({
@@ -31,8 +34,10 @@ import { SignupComponent } from './signup/signup.component';
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
-    ReactiveFormsModule
-  ],
+    ReactiveFormsModule,
+    BrowserAnimationsModule,
+    MatButtonModule
+    ],
   providers: [
     RequestService
   ],
