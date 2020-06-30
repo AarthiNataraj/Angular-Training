@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormControl, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-home',
@@ -7,10 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
   public title: string;
-
+  public name: FormControl;
 constructor() {
+  this.name = new FormControl('', Validators.required);
   this.setTitle();
-  this.changeTitle();
+  //this.changeTitle();
 }
 
 //settittle
@@ -29,4 +31,7 @@ public getTitle () {
   ngOnInit(): void {
   }
 
+  register() {
+    console.log(this.name.value);
+  }
 }

@@ -3,6 +3,13 @@
     Welcome to {{ getTitle() }}!
   </h1>
   <img width="300" alt="Angular Logo" src="./../assets/images/mydoll.jpg"> </div>
+
+  <form>
+    <input placeholder="First name" [formControl]="name" >
+    <button (click)="register() " >Register</button>
+</form>
+
+
   <!-- <h2>
     Here are some links to Help You Start:
   </h2> -->

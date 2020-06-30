@@ -1,0 +1,16 @@
+<br>
+<br>
+<form>
+  <div>
+    <input name="email" placeholder="email" [formControl]="email">
+    <span class="invalid" *ngIf="email.invalid"> email is invalid</span>
+  </div>
+  <div>
+    <input name="name" placeholder="name" [formControl]="name">
+  </div>
+  <div>
+    <input name="city" placeholder="city" [formControl]="city">
+    <span class="invalid" *ngIf="city.invalid">city should have min 4 char</span>
+  </div>
+  <button class="{{email.invalid ? 'disabled' : ''}}" (click)="register()"> Register </button>
+</form>

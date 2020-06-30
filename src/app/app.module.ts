@@ -9,8 +9,10 @@ import { DocumentationComponent } from './documentation/documentation.component'
 import { BlogComponent } from './blog/blog.component';
 import { RequestService } from './request.service';
 import { HttpClientModule } from '@angular/common/http';
-import {FormsModule} from '@angular/forms';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { HeaderComponent } from './header/header.component';
+import { ChildComponent } from './child/child.component';
+import { SignupComponent } from './signup/signup.component';
 
 
 @NgModule({
@@ -20,13 +22,16 @@ import { HeaderComponent } from './header/header.component';
     LearnComponent,
     DocumentationComponent,
     BlogComponent,
-    HeaderComponent
+    HeaderComponent,
+    ChildComponent,
+    SignupComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [
     RequestService
