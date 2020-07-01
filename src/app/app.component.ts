@@ -8,6 +8,7 @@ import { Component } from '@angular/core';
 
 export class AppComponent {
   public title: string;
+  //public message = 'Message from Parent Component';
     //public title = ' Aarthi Web app';
   constructor() {
     this.setTitle();
